@@ -1,0 +1,26 @@
+<div class="header">
+    <div class="home">    
+        <a routerLink="/home" ><mat-icon mat-fab class="btn btn-danger">home</mat-icon></a>
+    </div>
+    <nav class="navbar">
+        <a 
+            routerLink="/" 
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"  
+            class="btn btn-outline-danger"
+            >Services</a>
+        <a 
+            routerLink="/about" 
+            routerLinkActive="active"
+            class="btn btn-outline-danger"
+            >About</a>
+        <a 
+            routerLink="/contact" 
+            routerLinkActive="active"
+            class="btn btn-outline-danger"
+            >Contact</a>
+    </nav>
+</div>
+<div class="main">
+    <router-outlet></router-outlet>
+</div>
